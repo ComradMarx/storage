@@ -71,7 +71,7 @@
 
 <body>
   <div class="h1-container">
-    <h2>DESIGN SIDE 1 V3 </h2>
+    <h2>DESIGN SIDE 1 V4 </h2>
   </div>
 
 
@@ -502,6 +502,7 @@
     align-items: center; /* Center vertically */
   }
 
+
   @media only screen and (max-width: 450px) {
     .form-group {
       display: flex;
@@ -547,8 +548,23 @@
       white-space: nowrap; /* Prevent text wrapping */
       text-overflow: ellipsis; /* Show an ellipsis (...) if the text exceeds the width */
     }
+
+
+
+
+    /* Additional styles for specific iPhones */
+    @supports (-webkit-touch-callout: none) {
+      /* Add specific styles for iPhone models that require it */
+      /* Replace XXXX with the model name, e.g., iPhone11,2 */
+      @media (device-width: 450px) and (device-height: XXXXpx) {
+        .dropdown {
+          font-family: Impact, sans-serif;
+        }
+      }
+    }
   }
 </style>
+
 
 
 
