@@ -3,10 +3,20 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+
+
+
+
+
   <style>
     body {
       margin-bottom: 500px; /* Add margin to the bottom of the body */
     }
+
+
+
+
 
     .h1-container {
       border: 8px solid black;
@@ -70,8 +80,11 @@
 
 
 <body>
+
+
+
   <div class="h1-container">
-    <h2>DESIGN SIDE 1 V4 </h2>
+    <h2>DESIGN SIDE 1 </h2>
   </div>
 
 
@@ -92,6 +105,8 @@
       width: 800px; /* Adjust the width as needed */
       height: 500px; /* Adjust the default height as needed */
     }
+
+
 
     /* Styles for individual images */
     #logo,
@@ -122,7 +137,7 @@
 
 
 </head>
-<body>
+
   <div class="flex-container">
     <div id="image-container">
       <img id="logo" src="logo_mask/0.png" alt="transparent.png">
@@ -455,9 +470,7 @@
   </div>
 
 
-<style>
-select { width: 400px; text-align-last:center; }
-<style>
+
 
 
 
@@ -575,6 +588,119 @@ select { width: 400px; text-align-last:center; }
 
 
 
+
+
+
+
+<style>
+ 
+  .h2-container {
+    width: 550px;
+    border: 8px solid black;
+    border-radius: 12px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    text-align: center;
+    color: #363233;
+    margin-top: 75vh;
+    font-family: Impact, sans-serif;
+    transform: translateY(-50%);
+    background-color: #F3F3F3;
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+</style>
+
+
+
+
+  <div class="h2-container">
+    <h2>PAYMENT INFO</h2>
+  </div>
+
+
+
+
+
+
+<!-- MAKE THE PAYMENT FORM  -->
+
+  <form action="YOUR_PAYMENT_GATEWAY_ENDPOINT" method="POST">
+    <label for="name">NAME ON CARD:</label>
+    <input type="text" id="name" name="name" placeholder="John Doe" required>
+
+    <label for="cardNumber">CARD NUMBER:</label>
+    <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9012 3456" required>
+
+    <label for="expiry">EXPIRATION DATE:</label>
+    <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required>
+
+    <label for="cvv">CVV:</label>
+    <input type="text" id="cvv" name="cvv" placeholder="123" required>
+
+
+    <input type="submit" value="SUBMIT PAYMENT">
+  </form>
+
+
+
+
+
+
+<!--STYLE THE PAYMENT FORM  -->
+
+  <style>
+
+
+    form {
+    position: center;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 550px;
+    font-family: Impact, sans-serif;
+    font-weight: bold;
+    color: #363233;
+    font-size: 30px;
+    background-color: #F3F3F3;
+    border: 8px solid black;
+    border-radius: 12px;
+  }
+
+
+
+
+    form label {
+      margin-top: 15px;
+
+    }
+
+
+    form input {
+      padding: 15px;
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: Impact, sans-serif;
+      font-weight: bold;
+      color: #363233;
+      font-size: 30px;
+      background-color: #F3F3F3;
+      border: 8px solid black;
+    }
+  </style>
 
 
 
