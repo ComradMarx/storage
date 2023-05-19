@@ -2,7 +2,7 @@
 <html>
 
 <div class="h1-container">
-  <h2>DESIGN SIDE 1 -- (REVERSIBLE TIES) V14</h2>
+  <h2>DESIGN SIDE 1 -- (REVERSIBLE TIES) V15</h2>
 </div>
 
 
@@ -480,16 +480,20 @@
     border-radius: 12px;
     -moz-appearance: none;
     appearance: none;
-    text-align-last: center; /* Center text horizontally (for WebKit browsers) */
+    text-align: center; /* Center text horizontally */
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden; /* Hide the overflowing text */
+    text-overflow: ellipsis; /* Show an ellipsis (...) if the text exceeds the width */
   }
 
   @media only screen and (max-width: 450px) {
     .dropdown {
-      text-align: center; /* Center text */
+      width: 300px;
+      height: 85px;
+      font-size: 30px;
     }
   }
 </style>
-
 
 
 
