@@ -58,63 +58,44 @@
 
 
 
-<style>
-  .form-group {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 0x;
-    margin-top: 60px;
-  }
 
-  .form-group label {
-    font-family: Impact, sans-serif;
-    font-weight: bold;
-    text-align: center;
-    color: #363233;
-    font-size: 40px;
-    margin-bottom: 0px;
-  }
-
-  /* Custom select dropdown style */
-  .dropdown {
-    position: relative;
-    width: 550px;
-    height: 120px;
-    margin-bottom: -0px;
-    font-family: Impact, sans-serif;
-    font-weight: bold;
-    text-align: center;
-    font-size: 40px;
-    background-color: #F3F3F3;
-    border: 8px solid black;
-    padding: 0px 0px;
-    -webkit-appearance: none;
-    font-size: 35px;
-    border-radius: 12px;
-    -moz-appearance: none;
-    appearance: none;
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-  }
-
-  .dropdown option {
-    text-align: center;
-  }
-
-  @media only screen and (max-width: 450px) {
-    .form-group {
-      margin-top: 35px;
+  <style>
+    /* Define flex container styles */
+    .flex-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
-    .dropdown {
-      width: 300px;
-      height: 85px;
-      font-size: 30px;
+    /* Styles for image container */
+    #image-container {
+      position: relative;
+      width: 800px; /* Adjust the width as needed */
+      height: 500px; /* Adjust the default height as needed */
     }
-  }
-</style>
+
+    /* Styles for individual images */
+    #logo,
+    #center,
+    #front,
+    #back,
+    #strap {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    /* Media query for mobile devices */
+    @media only screen and (max-width: 450px) {
+      #image-container {
+        height: 200px; /* Adjust the height to make it smaller on mobile devices */
+
+      }
+    }
+  </style>
 
 <!-- Your HTML code for the image container -->
 
@@ -510,6 +491,12 @@
       width: 300px;
       height: 85px;
       font-size: 30px;
+      text-align: center;
+      font-family: Impact, sans-serif;
+
+
+
+
     }
   }
 </style>
