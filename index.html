@@ -283,7 +283,7 @@
     <label for="center-select">CENTER COLOR:</label>
     <div class="dropdown-container">
       <select id="center-select" class="dropdown">
-<option value="white" style="color: #F3F3F3;">WHITE</option> #new_goal  
+        <option value="white" style="color: #F3F3F3;">WHITE</option> #new_goal  
         <option value="banana" style="color: #F7E9C4;">BANANA</option> #new_goal  
         <option value="bay" style="color: #7D98A9;">BAY</option> #new_goal  
         <option value="berry" style="color: #8E5870;">BERRY</option> #new_goal  
@@ -361,7 +361,7 @@
     <label for="back-select">BACK COLOR:</label>
     <div class="dropdown-container">
       <select id="back-select" class="dropdown">
-<option value="white" style="color: #F3F3F3;">WHITE</option> #new_goal  
+        <option value="white" style="color: #F3F3F3;">WHITE</option> #new_goal  
         <option value="banana" style="color: #F7E9C4;">BANANA</option> #new_goal  
         <option value="bay" style="color: #7D98A9;">BAY</option> #new_goal  
         <option value="berry" style="color: #8E5870;">BERRY</option> #new_goal  
@@ -477,20 +477,23 @@
     border-radius: 12px;
     -moz-appearance: none;
     appearance: none;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
   }
 
   @media only screen and (max-width: 450px) {
-
-
-    .dropdown {
-    text-align: center; /* Center text */
+    .form-group {
+      margin-top: 35px;
     }
 
-
+    .dropdown {
+      width: 300px;
+      height: 85px;
+      font-size: 30px;
+    }
   }
 </style>
-
-
 
 
 
