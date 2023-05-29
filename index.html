@@ -5,7 +5,7 @@
 
 
 
-
+<!-- SOMEHING TO DO WITH MOBILE SCALING -->
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
@@ -14,18 +14,42 @@
 
 
 
+<!-- WEBPAGE LEANGHT -->
+
   <style>
     body {
       margin-bottom: 500px; /* Add margin to the bottom of the body */
     }
+  </style>
 
 
 
 
 
+
+
+
+
+
+
+<!-- CREATE H1 TAG*-->
+<!------------------------------------------------------------>
+ <div class="h1-container">
+    <h2>DESIGN SIDE 1 -- V3  </h2>
+  </div>
+<!------------------------------------------------------------>
+
+
+
+
+
+
+<!-- STYLE H1 TAG*-->
+<!------------------------------------------------------------>
+  <style>
     .h1-container {
-      border: 8px solid black;
-      border-radius: 12px;
+      #border: 8px solid black;
+      #border-radius: 12px;
       padding: 0px;
       display: flex;
       align-items: center;
@@ -34,22 +58,94 @@
       text-align: center;
       color: #363233;
       margin-top: 10vh;
+      margin-bottom: -25vh;
       font-family: Impact, sans-serif;
       transform: translateY(-50%);
-      background-color: #F3F3F3;
-      max-width: 40%;
+      #background-color: #F3F3F3;
+      max-width: 50%;
       max-height: 40%;
       margin-left: auto;
       margin-right: auto;
+      font-size: 50px; /* Adjust the font size as desired */
     }
 
+  </style>
 
-    /* Define flex container styles */
+
+
+<!--@ MOBILE STYLING -->
+<!------------------------------------------------------------>
+
+<style>
+    /* Media query for mobile devices */
+    @media only screen and (max-width: 450px) {
+      .h1-container {
+        height: 180px;
+        font-size: 30px;
+        margin-top: 10vh;
+        white-space: nowrap;
+
+
+      }
+    }
+
+</style>
+<!------------------------------------------------------------>
+
+
+
+
+
+
+
+
+
+</head>
+<!-- HEAD TO BODY*-->
+<body>
+
+
+
+
+
+
+
+
+<!-- CREATE [FLEX CONTAINER]  [IMAGE CONTAINER], AND [IMAGES]-->
+<!------------------------------------------------------------>
+
+  <div class="flex-container">
+    <div id="image-container">
+      <img id="logo" src="logo_mask/0.png" alt="transparent.png">
+      <img id="center" src="center_colors/white.png" alt="Image 1">
+      <img id="front" src="front_colors/white.png" alt="Image 2">
+      <img id="back" src="back_colors/white.png" alt="Image 3">
+      <img id="strap" src="strap_colors/white.png" alt="Image 4">
+    </div>
+  </div>
+</body>
+</html>
+<!------------------------------------------------------------>
+<!-- CREATE [FLEX CONTAINER]  [IMAGE CONTAINER], AND [IMAGES]-->
+
+
+
+
+
+
+
+
+<!-- STYLE [FLEX CONTAINER]  [IMAGE CONTAINER], AND [IMAGES]-->
+<!------------------------------------------------------------>
+  <style>
+
+    /*flex container styles */
     .flex-container {
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: top;
     }
+
 
     /* Styles for image container */
     #image-container {
@@ -72,194 +168,71 @@
       object-fit: contain;
     }
 
-    /* Media query for mobile devices */
-    @media only screen and (max-width: 450px) {
-      #image-container {
-        height: 180px;
-      }
+
+<!--IMAGES / LAYERS POSIITONING-->
+
+    #logo {
+      z-index: 0;
     }
+
+    #center {
+      z-index: -1;
+    }
+
+    #front{
+      z-index: -2;
+    }
+
+    #back{
+      z-index: -3;
+    }
+
+    #strap{
+      z-index: -4;
+    }
+
   </style>
-</head>
-
-
-
-
-
-<body>
-
-
-
-  <div class="h1-container">
-    <h2>DESIGN SIDE 1 -- V2  </h2>
-  </div>
-
-
-
-
-
-      
+<!-- STYLE [FLEX CONTAINER]  [IMAGE CONTAINER], AND [IMAGES]-->
+<!------------------------------------------------------------>
 
 
 
 
 
 
+<!--STYLE [FLEX CONTAINER]  [IMAGE CONTAINER], AND [IMAGES]-->
+<!--@ MOBILE STYLING -->
+<!------------------------------------------------------------>
 
-
-  <style>
-    /* Define flex container styles */
-    .flex-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    /* Styles for image container */
-    #image-container {
-      position: relative;
-      width: 800px; /* Adjust the width as needed */
-      height: 500px; /* Adjust the default height as needed */
-    }
-
-
-
-    /* Styles for individual images */
-    #logo,
-    #center,
-    #front,
-    #back,
-    #strap {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-    }
-
-    /* Media query for mobile devices */
-    @media only screen and (max-width: 450px) {
-      #image-container {
-        height: 200px; /* Adjust the height to make it smaller on mobile devices */
-
-      }
-    }
-  </style>
-
-<!-- Your HTML code for the image container -->
-
-
-
-
-</head>
-
-  <div class="flex-container">
-    <div id="image-container">
-      <img id="logo" src="logo_mask/0.png" alt="transparent.png">
-      <img id="center" src="center_colors/white.png" alt="Image 1">
-      <img id="front" src="front_colors/white.png" alt="Image 2">
-      <img id="back" src="back_colors/white.png" alt="Image 3">
-      <img id="strap" src="strap_colors/white.png" alt="Image 4">
-    </div>
-  </div>
-</body>
-</html>
-
-
-
-
-
-
-
-
-
-
-<!-- STYLES IMAGE CONTAINER-->
 <style>
+  /* Mobile styles */
+  @media only screen and (max-width: 500px) {
+    .flex-container {
+      align-items: center;
+      margin-top: 10px;
 
-#logo {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  z-index: 0;
-}
+    }
 
-#center {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  z-index: -1;
-}
+    #image-container {
+      width: 100%;
+      height: 180px;
+      padding: 10px;
+    }
 
-#front{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  z-index: -2;
-}
+    .image-container img {
+      display: block;
+      height: 180px;
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto;
+      padding: 10px;
+      margin-bottom: 20px;
 
-#back{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  z-index: -3;
-}
-
-#strap{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  z-index: -4;
-}
-
-</style>
-<!-- STYLES IMAGE CONTAINER-->
-
-
-
-
-
-
-
-
-
-
-
-<img src="images/color_pallet_2.png" alt="My Image" class="bordered-image">
-
- <style>
-  .bordered-image {
-    border: 8px solid black;
-    border-radius: 12px;
-    padding: 0px;
-    display: flex;
-    align-items: center;
-    margin-top: 0vh;
-    margin-botom: 10vh;
-    font-family: Impact, sans-serif;
-    background-color: #F3F3F3;
-    max-width: 40%;
-    max-height: 40%;
-    margin-left: auto;
-    margin-right: auto;
+    }
   }
 </style>
 
+<!------------------------------------------------------------>
 
 
 
@@ -269,6 +242,114 @@
 
 
 
+
+
+<!-- READ IN THE COLOR PALLET IMAGE-->
+<!------------------------------------------------------------>
+<div class="image-container2">
+  <div class="label">COLOR OPTIONS</div>
+  <img src="images/color_pallet_2.png" alt="My Image" class="bordered-image">
+</div>
+
+
+<style>
+.image-container2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.label {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #363233;
+  font-size: 14px;
+  font-family: Impact, sans-serif;
+  font-weight: bold;
+  text-align: top;
+  font-size: 40px;
+
+}
+
+
+
+
+.bordered-image {
+  width: 550px;
+  margin-bottom: 0;
+  font-family: Impact, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 40px;
+  background-color: #F3F3F3;
+  border: 8px solid black;
+  padding: 0;
+  -webkit-appearance: none;
+  font-size: 35px;
+  border-radius: 12px;
+  -moz-appearance: none;
+}
+</style>
+
+<!------------------------------------------------------------>
+
+
+
+
+
+
+<!------@MOBILE----->
+
+<style>
+    /* Media query for mobile devices */
+    @media only screen and (max-width: 450px) {
+
+
+      .image-container2 {
+        margin-top: 60px;
+
+
+
+      }
+
+      .bordered-image {
+        width: 350px;
+        border: 8px solid black;
+        top
+
+      }
+
+
+      .label {
+      white-space: nowrap;
+
+      }
+
+
+    }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--  NOT ENTIRE SURE HOW THIS WORKS.>
+<!--  5 DIFFERENT TAGS ALL NAMED FORM-GROUP?-->
+<!--  SHOULD BE WRAPPED IN MASTER DIB? -->
+<!-- Dropdown Buttons with Selection Options -->
+<!------------------------------------------------------------>
 
 
   <div class="form-group">
@@ -349,7 +430,6 @@
     </div>
   </div>
 
-
   <div class="form-group">
     <label for="center-select">MIDDLE  COLOR</label>
     <div class="dropdown-container">
@@ -427,7 +507,6 @@
       </select>
     </div>
   </div>
-
 
   <div class="form-group">
     <label for="back-select">BACK  COLOR</label>
@@ -507,8 +586,6 @@
     </div>
   </div>
 
-
-  <!-- Dropdown Buttons with Selection Options -->
   <div class="form-group">
     <label for="logo-select">LOGO SIZE:</label>
     <div class="dropdown-container">
@@ -528,7 +605,7 @@
   </div>
 
 
-
+<!-- SUBMITT BUTTON -->
 <div class="form-group">
   <div class="dropdown-container">
     <button type="submit" class="submit-button">Submit</button>
@@ -537,6 +614,7 @@
 
 
 
+<!------------------------------------------------------------>
 
 
 
@@ -546,12 +624,8 @@
 
 
 
-
-
-
-
-
-
+<!----------------- STYLE FORMGROUP NORMAL    ------->
+<!------------------------------------------------------------>
 
 <style>
   .form-group {
@@ -594,7 +668,18 @@
     align-items: center; /* Center vertically */
     text-align: center; /* Center text horizontally */
   }
+</style>
+<!------------------------------------------------------------>
 
+
+
+
+
+
+
+<!-----------STYLE FORM GROUP @ MOBILE----------------->
+<!------------------------------------------------------------>
+<style>
   @media only screen and (max-width: 450px) {
     .form-group {
       display: flex;
@@ -642,6 +727,7 @@
   }
 </style>
 
+<!------------------------------------------------------------>
 
 
 
@@ -659,12 +745,17 @@
 
 
 
+<!-------NEW H2 CONTAINER---------------------->
+<!------------------------------------------------------------>
+  <div class="h2-container">
+    <h2>PAYMENT INFO</h2>
+  </div>
+<!------------------------------------------------------------>
 
 
 
-
-
-
+<!-------STYLE NEW H2 CONTAINER---------------------->
+<!------------------------------------------------------------>
 <style>
  
   .h2-container {
@@ -689,19 +780,16 @@
   }
   @media only screen and (max-width: 450px) {
       .h2-container {
-      width: 350px}}
+      width: 350px}
 
 
+    }
 
 
 </style>
 
+<!------------------------------------------------------------>
 
-
-
-  <div class="h2-container">
-    <h2>PAYMENT INFO</h2>
-  </div>
 
 
 
@@ -711,7 +799,7 @@
 
 
 <!-- MAKE THE PAYMENT FORM  -->
-
+<!---------------------------------------------------------------->
   <form action="YOUR_PAYMENT_GATEWAY_ENDPOINT" method="POST">
     <label for="name">NAME ON CARD:</label>
     <input type="text" id="name" name="name" placeholder="John Doe" required>
@@ -728,18 +816,17 @@
 
     <input type="submit" value="SUBMIT PAYMENT">
   </form>
-
+<!---------------------------------------------------------------->
 
 
 
 
 
 <!--STYLE THE PAYMENT FORM  -->
-
+<!---------------------------------------------------------------->
   <style>
 
-
-    form {
+    .form {
     position: center;
     left: 0;
     right: 0;
@@ -760,13 +847,13 @@
   }
 
 
-    form label {
+    .form label {
       margin-top: 15px;
 
     }
 
 
-    form input {
+    .form input {
       padding: 15px;
       margin-bottom: 20px;
       display: flex;
@@ -779,10 +866,18 @@
       background-color: #F3F3F3;
       border: 8px solid black;
     }
+<!---------------------------------------------------------------->
+
+  </style>
 
 
 
-  @media only screen and (max-width: 450px) {
+<!-------Style form @ mobile------>
+<!---------------------------------------------------------------->
+<style>
+    /* Media query for mobile devices */
+    @media only screen and (max-width: 450px) {
+
       form {
       width: 350px;
       height: 750px;
@@ -802,13 +897,10 @@
       background-color: #F3F3F3;
       border: 8px solid black;
       border-radius: 12px;
-
-    }
-
+      }
 
 
-
-    form input {
+     form input {
       padding: 10px;
       margin-bottom: 20px;
       display: flex;
@@ -823,22 +915,12 @@
     }
 
 
-
-
     }
 
 
+</style>
 
-
-
-
-
-
-
-  </style>
-
-
-
+<!---------------------------------------------------------------->
 
 
 
@@ -859,6 +941,14 @@
 
 
 
+
+
+
+
+
+
+
+<!---------------------------------------------------------------->
 
 <script>
   // Get the necessary elements
